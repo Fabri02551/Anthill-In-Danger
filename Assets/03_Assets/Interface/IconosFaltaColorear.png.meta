@@ -1,0 +1,613 @@
+fileFormatVersion: 2
+guid: 7b594e87d9381d84b87de9bbf483dd93
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5409141444145733422
+    second: IconosFaltaColorear_0
+  - first:
+      213: 3404408545461554830
+    second: IconosFaltaColorear_1
+  - first:
+      213: 5624157730221232220
+    second: IconosFaltaColorear_2
+  - first:
+      213: -1570920048530776289
+    second: IconosFaltaColorear_3
+  - first:
+      213: 2418044818291879247
+    second: IconosFaltaColorear_4
+  - first:
+      213: -6331284675307528415
+    second: IconosFaltaColorear_5
+  - first:
+      213: 263160982605453289
+    second: IconosFaltaColorear_6
+  - first:
+      213: -2124599033746083464
+    second: IconosFaltaColorear_7
+  - first:
+      213: 2945796285525945222
+    second: IconosFaltaColorear_8
+  - first:
+      213: 3964679315784580954
+    second: IconosFaltaColorear_9
+  - first:
+      213: -4241127482862400919
+    second: IconosFaltaColorear_16
+  - first:
+      213: -7448536401416526103
+    second: IconosFaltaColorear_17
+  - first:
+      213: 8126571727068447577
+    second: IconosFaltaColorear_18
+  - first:
+      213: 1249246069574629416
+    second: IconosFaltaColorear_19
+  - first:
+      213: -6910079564003713784
+    second: IconosFaltaColorear_20
+  - first:
+      213: -3954977666988757281
+    second: IconosFaltaColorear_26
+  - first:
+      213: -2712097776345741069
+    second: IconosFaltaColorear_27
+  - first:
+      213: -6848447579529893640
+    second: IconosFaltaColorear_28
+  - first:
+      213: 1779595444959419071
+    second: IconosFaltaColorear_29
+  - first:
+      213: 5668741157034736499
+    second: IconosFaltaColorear_30
+  - first:
+      213: 2324572122638917377
+    second: IconosFaltaColorear_31
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IconosFaltaColorear_0
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 2586
+        width: 1003
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0a9d1f38edee4b0800000000000000
+      internalID: -5409141444145733422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_1
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 3090
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e4a86e883ee3f20800000000000000
+      internalID: 3404408545461554830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_2
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 3059
+        width: 353
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c509a9658a50d0e40800000000000000
+      internalID: 5624157730221232220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_3
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 3069
+        width: 354
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f98c8f988f23ae0800000000000000
+      internalID: -1570920048530776289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_4
+      rect:
+        serializedVersion: 2
+        x: 1590
+        y: 3055
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4de24d63fe9e8120800000000000000
+      internalID: 2418044818291879247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_5
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 2680
+        width: 354
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f9b64e122c228a0800000000000000
+      internalID: -6331284675307528415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_6
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 2773
+        width: 5
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e7d0f6f48fe6a300800000000000000
+      internalID: 263160982605453289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_7
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 2697
+        width: 354
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8713d677f68e382e0800000000000000
+      internalID: -2124599033746083464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_8
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 2761
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b607b3d1291e820800000000000000
+      internalID: 2945796285525945222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_9
+      rect:
+        serializedVersion: 2
+        x: 1925
+        y: 2737
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5fbda9f4de550730800000000000000
+      internalID: 3964679315784580954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_16
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 2407
+        width: 4
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a07d8560d7425c0800000000000000
+      internalID: -4241127482862400919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_17
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 2132
+        width: 353
+        height: 341
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e660016b9b71a890800000000000000
+      internalID: -7448536401416526103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_18
+      rect:
+        serializedVersion: 2
+        x: 1921
+        y: 2411
+        width: 212
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 953c5a9ede167c070800000000000000
+      internalID: 8126571727068447577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_19
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 2388
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8287c067ea6365110800000000000000
+      internalID: 1249246069574629416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_20
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 2363
+        width: 4
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d5fd96f377a10a0800000000000000
+      internalID: -6910079564003713784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_26
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1949
+        width: 857
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde288824c81d19c0800000000000000
+      internalID: -3954977666988757281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_27
+      rect:
+        serializedVersion: 2
+        x: 1714
+        y: 2036
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f809c41171bc5ad0800000000000000
+      internalID: -2712097776345741069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_28
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 2015
+        width: 5
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8ac37063d65f0a0800000000000000
+      internalID: -6848447579529893640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_29
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 2003
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba95b4e0a462b810800000000000000
+      internalID: 1779595444959419071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_30
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 1980
+        width: 5
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b31bc4c0a6bae40800000000000000
+      internalID: 5668741157034736499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconosFaltaColorear_31
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 1922
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f1ba8870a824020800000000000000
+      internalID: 2324572122638917377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
