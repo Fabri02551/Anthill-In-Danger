@@ -1,0 +1,340 @@
+fileFormatVersion: 2
+guid: eee8d3404649de34393dc1e8af8f2267
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Left_Arm_4
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 422
+        width: 71
+        height: 60
+      alignment: 9
+      pivot: {x: 0.9312989, y: 0.06439718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4234be846b3b2c840800000000000000
+      internalID: 5242950511701476132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_antenna
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 365
+        width: 22
+        height: 119
+      alignment: 9
+      pivot: {x: 0.3698994, y: 0.028794745}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1daf7280065f960800000000000000
+      internalID: 7635114331423298040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Right_antenna
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 366
+        width: 22
+        height: 119
+      alignment: 9
+      pivot: {x: 0.69515157, y: 0.022235004}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16ab06bd4cabf3f90800000000000000
+      internalID: -6971648343489332639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: right_Arm_4
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 425
+        width: 71
+        height: 62
+      alignment: 9
+      pivot: {x: 0.07685787, y: 0.08711538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9999b0c56f20f670800000000000000
+      internalID: 8570402204957645211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Arm_2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 157
+        width: 120
+        height: 112
+      alignment: 9
+      pivot: {x: 0.91331106, y: 0.9091674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b8f72e7a06b5c1a0800000000000000
+      internalID: -6789820707008677712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Arm_3
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 299
+        width: 115
+        height: 96
+      alignment: 9
+      pivot: {x: 0.9291013, y: 0.6584749}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25a5d32d6f93a130800000000000000
+      internalID: 3576877820163761455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ant_body
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 11
+        width: 118
+        height: 320
+      alignment: 9
+      pivot: {x: 0.51387864, y: 0.64969397}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf46a47464f03b4a0800000000000000
+      internalID: -6578897836139977477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: right_Arm_7
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 160
+        width: 118
+        height: 110
+      alignment: 9
+      pivot: {x: 0.04241865, y: 0.91580844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79580a058f4ac78e0800000000000000
+      internalID: -1694297973386607209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: right_Arm_3
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 310
+        width: 116
+        height: 96
+      alignment: 9
+      pivot: {x: 0.08742365, y: 0.6478688}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa747587d61918230800000000000000
+      internalID: 3639349873248520106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Arm_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 3
+        width: 89
+        height: 140
+      alignment: 9
+      pivot: {x: 0.8258908, y: 0.91227514}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d47c940d683619b0800000000000000
+      internalID: -5109834686325295912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: right_Arm_1
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 5
+        width: 87
+        height: 139
+      alignment: 9
+      pivot: {x: 0.15994929, y: 0.92358774}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1cd38e5b642579d0800000000000000
+      internalID: -2777273551638242273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
