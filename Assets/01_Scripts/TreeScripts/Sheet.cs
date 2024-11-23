@@ -14,13 +14,8 @@ public class Sheet : MonoBehaviour
         foodAmount = newFoodAmount;
 
         // Cambiar el tamaño visual de la hoja
-        transform.localScale = Vector3.one * size;
+        transform.localScale = Vector3.one * (size * 0.3f);
     }
 
-    private void OnDrawGizmos()
-    {
-        // Para visualización, dibuja la hoja en la escena
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, size / 2);
-    }
+   
 }

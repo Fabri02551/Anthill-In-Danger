@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CamaraFollow : MonoBehaviour
 {
-
-
     public float moveSpeed = 10f; // Velocidad de movimiento de la cámara
     public float edgeThickness = 10f; // Distancia del borde para activar el movimiento
 
@@ -14,10 +12,7 @@ public class CamaraFollow : MonoBehaviour
     public float maxX = 50f;  // Límite derecho
     public float minY = -50f; // Límite inferior
     public float maxY = 50f;  // Límite superior
-    void Start()
-    {
-        
-    }
+
     void Update()
     {
         // Obtener la posición actual de la cámara
@@ -44,11 +39,10 @@ public class CamaraFollow : MonoBehaviour
         }
 
         // Limitar la posición dentro de los límites establecidos
-        pos.x = Mathf.Clamp(pos.x, minX, maxX);
-        pos.y = Mathf.Clamp(pos.y, minY, maxY);
+        pos.x = Mathf.Clamp(pos.x, minX, maxX); // Limita la posición en X
+        pos.y = Mathf.Clamp(pos.y, minY, maxY); // Limita la posición en Y
 
         // Actualizar la posición de la cámara
         transform.position = pos;
     }
-
 }

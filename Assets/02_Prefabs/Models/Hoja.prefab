@@ -9,7 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2669613105662912205}
+  - component: {fileID: -2258036596089325513}
   - component: {fileID: 7142126695798145837}
+  - component: {fileID: 207536293464241205}
+  - component: {fileID: 9031991738468039663}
   m_Layer: 0
   m_Name: Hoja
   m_TagString: Untagged
@@ -31,6 +34,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-2258036596089325513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782667995839481587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ce3c1c7b09b1f34688370061b7ec5f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  size: 1
+  foodAmount: 500
 --- !u!212 &7142126695798145837
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -82,3 +99,153 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &207536293464241205
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782667995839481587}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &9031991738468039663
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782667995839481587}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.05, y: 4.62}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.42499998, y: -1.88}
+      - {x: -0.195, y: -2.02}
+      - {x: -0.095, y: -2.02}
+      - {x: 0.055, y: -2.08}
+      - {x: 0.175, y: -2.08}
+      - {x: 0.49499997, y: -2.05}
+      - {x: 0.555, y: -2}
+      - {x: 0.765, y: -1.9399999}
+      - {x: 0.84499997, y: -1.87}
+      - {x: 0.965, y: -1.79}
+      - {x: 1.165, y: -1.68}
+      - {x: 1.225, y: -1.5899999}
+      - {x: 1.225, y: -1.5}
+      - {x: 1.3149999, y: -1.4499999}
+      - {x: 1.505, y: -1.3}
+      - {x: 1.515, y: -1.1899999}
+      - {x: 1.675, y: -1}
+      - {x: 1.6949999, y: -0.93}
+      - {x: 1.655, y: -0.88}
+      - {x: 1.8249999, y: -0.7}
+      - {x: 1.8449999, y: -0.59999996}
+      - {x: 1.8349999, y: -0.5}
+      - {x: 1.915, y: -0.42999998}
+      - {x: 1.9549999, y: -0.25}
+      - {x: 1.915, y: -0.21}
+      - {x: 2.0249999, y: -0.01}
+      - {x: 2.0249999, y: 0.03}
+      - {x: 2.0049999, y: 0.12}
+      - {x: 2.0249999, y: 0.26}
+      - {x: 2.0249999, y: 0.75}
+      - {x: 1.9749999, y: 0.78999996}
+      - {x: 2.0049999, y: 1.04}
+      - {x: 1.9449999, y: 1.15}
+      - {x: 1.9649999, y: 1.35}
+      - {x: 1.885, y: 1.42}
+      - {x: 1.895, y: 1.52}
+      - {x: 1.885, y: 1.63}
+      - {x: 1.8349999, y: 1.7099999}
+      - {x: 1.795, y: 1.93}
+      - {x: 1.735, y: 1.9499999}
+      - {x: 1.7249999, y: 2.19}
+      - {x: 1.6949999, y: 2.27}
+      - {x: 1.645, y: 2.31}
+      - {x: 1.525, y: 2.31}
+      - {x: 1.415, y: 2.28}
+      - {x: 1.285, y: 2.22}
+      - {x: 1.235, y: 2.28}
+      - {x: 1.155, y: 2.3}
+      - {x: 1.015, y: 2.24}
+      - {x: 0.885, y: 2.23}
+      - {x: 0.765, y: 2.24}
+      - {x: 0.585, y: 2.1299999}
+      - {x: 0.505, y: 2.19}
+      - {x: 0.435, y: 2.19}
+      - {x: 0.305, y: 2.11}
+      - {x: 0.205, y: 2.11}
+      - {x: 0.085, y: 2.1399999}
+      - {x: -0.125, y: 1.9799999}
+      - {x: -0.16499999, y: 2.02}
+      - {x: -0.325, y: 1.99}
+      - {x: -0.435, y: 1.86}
+      - {x: -0.59499997, y: 1.8499999}
+      - {x: -0.625, y: 1.8399999}
+      - {x: -0.755, y: 1.6999999}
+      - {x: -0.92499995, y: 1.68}
+      - {x: -1.055, y: 1.53}
+      - {x: -1.105, y: 1.48}
+      - {x: -1.185, y: 1.49}
+      - {x: -1.255, y: 1.43}
+      - {x: -1.3149999, y: 1.28}
+      - {x: -1.435, y: 1.28}
+      - {x: -1.535, y: 1.15}
+      - {x: -1.5649999, y: 0.96999997}
+      - {x: -1.645, y: 0.97999996}
+      - {x: -1.7149999, y: 0.89}
+      - {x: -1.7249999, y: 0.82}
+      - {x: -1.775, y: 0.62}
+      - {x: -1.8449999, y: 0.63}
+      - {x: -1.915, y: 0.53}
+      - {x: -1.905, y: 0.29}
+      - {x: -1.9549999, y: 0.26999998}
+      - {x: -2.0049999, y: 0.19999999}
+      - {x: -2.0049999, y: 0.12}
+      - {x: -1.9749999, y: -0.04}
+      - {x: -2.0249999, y: -0.089999996}
+      - {x: -2.0249999, y: -0.22}
+      - {x: -2.0049999, y: -0.32999998}
+      - {x: -1.995, y: -0.52}
+      - {x: -1.885, y: -0.72999996}
+      - {x: -1.865, y: -0.87}
+      - {x: -1.785, y: -0.96999997}
+      - {x: -1.675, y: -1.09}
+      - {x: -1.545, y: -1.1899999}
+      - {x: -1.3349999, y: -1.29}
+      - {x: -0.955, y: -1.4}
+      - {x: -1.255, y: -1.79}
+      - {x: -1.435, y: -1.9699999}
+      - {x: -1.545, y: -2.04}
+      - {x: -1.605, y: -2.1599998}
+      - {x: -1.485, y: -2.31}
+      - {x: -1.295, y: -2.31}
+      - {x: -1.255, y: -2.28}
+      - {x: -0.97499996, y: -1.8499999}
+      - {x: -0.755, y: -1.53}
