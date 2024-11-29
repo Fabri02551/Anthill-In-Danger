@@ -1,0 +1,373 @@
+fileFormatVersion: 2
+guid: 15dcfa3011ee2034681e63e494ee2580
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2012972906041590031
+    second: Hn_LeftArm1
+  - first:
+      213: -5469363297573284990
+    second: Hn_AntennaLeft
+  - first:
+      213: -3049756008925591141
+    second: Hn_AntennaRight
+  - first:
+      213: 4260279033474391207
+    second: Hn_RightArm2
+  - first:
+      213: -15787978949550045
+    second: Hn_RightArm1
+  - first:
+      213: 4657332218749820103
+    second: Hn_LeftArm2
+  - first:
+      213: 8293187497534244266
+    second: Hn_Body
+  - first:
+      213: -1372993174175770262
+    second: Hn_LeftArm3
+  - first:
+      213: -7101493263850243551
+    second: Hn_RightArm3
+  - first:
+      213: -4310262827309559090
+    second: Hn_RightArm4
+  - first:
+      213: -6356973971839760191
+    second: Hn_LeftArm4
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hn_LeftArm1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 419
+        width: 67
+        height: 58
+      alignment: 9
+      pivot: {x: 0.9534183, y: 0.054250784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01481f51348feb10800000000000000
+      internalID: 2012972906041590031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hn_AntennaLeft
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 361
+        width: 15
+        height: 116
+      alignment: 9
+      pivot: {x: 0.4834128, y: 0.043270536}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283d59c0f0be814b0800000000000000
+      internalID: -5469363297573284990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hn_AntennaRight
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 361
+        width: 16
+        height: 117
+      alignment: 9
+      pivot: {x: 0.8085079, y: 0.038401287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99806471171da5d0800000000000000
+      internalID: -3049756008925591141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hn_RightArm2
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 307
+        width: 113
+        height: 94
+      alignment: 9
+      pivot: {x: 0.054499533, y: 0.63123566}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac1942853d8f1b30800000000000000
+      internalID: 4260279033474391207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hn_RightArm1
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 423
+        width: 67
+        height: 57
+      alignment: 9
+      pivot: {x: 0.06900922, y: 0.0632699}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320adf2bae8e7cff0800000000000000
+      internalID: -15787978949550045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hn_LeftArm2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 296
+        width: 110
+        height: 94
+      alignment: 9
+      pivot: {x: 0.9636118, y: 0.6307633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc90933afa22a040800000000000000
+      internalID: 4657332218749820103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hn_Body
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 11
+        width: 109
+        height: 312
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa54d3ef612571370800000000000000
+      internalID: 8293187497534244266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hn_LeftArm3
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 156
+        width: 117
+        height: 109
+      alignment: 9
+      pivot: {x: 0.95864135, y: 0.91176367}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6997368bf522fce0800000000000000
+      internalID: -1372993174175770262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hn_RightArm3
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 159
+        width: 114
+        height: 107
+      alignment: 9
+      pivot: {x: 0.049788892, y: 0.91309965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a7069708d627d90800000000000000
+      internalID: -7101493263850243551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hn_RightArm4
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 5
+        width: 79
+        height: 134
+      alignment: 9
+      pivot: {x: 0.091028914, y: 0.9558697}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec294a99bcede24c0800000000000000
+      internalID: -4310262827309559090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hn_LeftArm4
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 3
+        width: 82
+        height: 135
+      alignment: 9
+      pivot: {x: 0.8822765, y: 0.95148236}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c846127add77c7a0800000000000000
+      internalID: -6356973971839760191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

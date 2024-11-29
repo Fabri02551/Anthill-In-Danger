@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7142126695798145837}
   - component: {fileID: 207536293464241205}
   - component: {fileID: 9031991738468039663}
+  - component: {fileID: 6650526246934654908}
   m_Layer: 0
   m_Name: Hoja
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5782667995839481587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 375.7154, y: 151.0924, z: 0}
-  m_LocalScale: {x: 0.17828315, y: 0.17828315, z: 0.17828315}
+  m_LocalScale: {x: 0.03246844, y: 0.03246844, z: 0.03246845}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -249,3 +250,24 @@ PolygonCollider2D:
       - {x: -1.255, y: -2.28}
       - {x: -0.97499996, y: -1.8499999}
       - {x: -0.755, y: -1.53}
+--- !u!95 &6650526246934654908
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5782667995839481587}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7c95ba98763c1ad468dc7de40fb9ab06, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
