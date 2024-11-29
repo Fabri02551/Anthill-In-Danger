@@ -1,0 +1,550 @@
+fileFormatVersion: 2
+guid: 9b91723cac07d9d4d8e16f7656d5fac5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: G_Head
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 2453
+        width: 244
+        height: 169
+      alignment: 9
+      pivot: {x: 0.4999995, y: 0.28161982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4252c49ec3190fc00800000000000000
+      internalID: 932404813663839524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_RightAntenna
+      rect:
+        serializedVersion: 2
+        x: 1906
+        y: 2343
+        width: 439
+        height: 301
+      alignment: 9
+      pivot: {x: 0.022935316, y: 0.038637485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8902674b83a35440800000000000000
+      internalID: 4923458636239473038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_LeftJaw
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 2286
+        width: 40
+        height: 32
+      alignment: 9
+      pivot: {x: 0.13042144, y: 0.17873248}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af41461489ea8d020800000000000000
+      internalID: 2366833573138535674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_RightJaw
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 2253
+        width: 38
+        height: 30
+      alignment: 9
+      pivot: {x: 0.7840865, y: 0.21289062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15875191daf7caa80800000000000000
+      internalID: -8454242019054356399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_LeftArm1_1
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 2099
+        width: 137
+        height: 122
+      alignment: 9
+      pivot: {x: 0.8320562, y: 0.12711722}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a1c404af46b37c0800000000000000
+      internalID: -4090564810552632755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_RightArm1_1
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 2093
+        width: 127
+        height: 118
+      alignment: 9
+      pivot: {x: 0.09114712, y: 0.1031039}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca75d690dd9df9a0800000000000000
+      internalID: -6197623992982603065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_LeftAntenna
+      rect:
+        serializedVersion: 2
+        x: 1929
+        y: 1806
+        width: 438
+        height: 302
+      alignment: 9
+      pivot: {x: 0.97542596, y: 0.029219672}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5166f8a1f5ee7670800000000000000
+      internalID: 8538514769625637214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_LeftArm1_2
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1919
+        width: 52
+        height: 110
+      alignment: 9
+      pivot: {x: 0.51107436, y: 0.1492587}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e35252984d633390800000000000000
+      internalID: -7839802367861959703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_RightArm1_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1939
+        width: 54
+        height: 121
+      alignment: 9
+      pivot: {x: 0.47646755, y: 0.100941055}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e56de8900389a00800000000000000
+      internalID: 763412954448551445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_LeftArm1_3
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1722
+        width: 157
+        height: 144
+      alignment: 9
+      pivot: {x: 0.8924545, y: 0.1647481}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fee3396e9e245ff0800000000000000
+      internalID: -48362438089511182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_RightArm1_3
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1735
+        width: 159
+        height: 143
+      alignment: 9
+      pivot: {x: 0.086702935, y: 0.16511162}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a301165ec202a110800000000000000
+      internalID: 1270581130102375337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_LeftArm2_2
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 1574
+        width: 109
+        height: 80
+      alignment: 9
+      pivot: {x: 0.9276168, y: 0.36941224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0a23e29cd9e96f0800000000000000
+      internalID: -675929406669938464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_RightArm2_2
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 1492
+        width: 109
+        height: 85
+      alignment: 9
+      pivot: {x: 0.050624464, y: 0.3994916}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5db2d187e406dd200800000000000000
+      internalID: 206427048067804117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_LeftArm2_1
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 1135
+        width: 191
+        height: 287
+      alignment: 9
+      pivot: {x: 0.9525239, y: 0.92258406}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0f0daebf4daa67e0800000000000000
+      internalID: -1771412945403834612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_RightArm2_1
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 1077
+        width: 192
+        height: 287
+      alignment: 9
+      pivot: {x: 0.057036083, y: 0.9528158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ce43d2fa32d5280800000000000000
+      internalID: -9053040440660136881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_Body
+      rect:
+        serializedVersion: 2
+        x: 2151
+        y: 544
+        width: 323
+        height: 778
+      alignment: 9
+      pivot: {x: 0.4961716, y: 0.53338057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5baf6f8f08c5e88a0800000000000000
+      internalID: -6300997119642240331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_LeftArm3_2
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 773
+        width: 184
+        height: 155
+      alignment: 9
+      pivot: {x: 0.91922015, y: 0.47804427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b71717f79954cbb0800000000000000
+      internalID: -4916706383961319502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_RightArm3_2
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 798
+        width: 180
+        height: 159
+      alignment: 9
+      pivot: {x: 0.040857613, y: 0.49999884}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eecb8250885eaf70800000000000000
+      internalID: 9200388396928454369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_LeftArm3_1
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 244
+        width: 199
+        height: 447
+      alignment: 9
+      pivot: {x: 0.07376022, y: 0.96264637}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02cb275f4d7205490800000000000000
+      internalID: -7759658362354877408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_RightArm3_1
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 199
+        width: 198
+        height: 451
+      alignment: 9
+      pivot: {x: 0.94536924, y: 0.97542477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2faeb1a9d1208bb0800000000000000
+      internalID: -4935907972992815314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: G_Neck
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 112
+        width: 242
+        height: 198
+      alignment: 9
+      pivot: {x: 0.5198894, y: 0.06244035}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddcd6dbf14bba140800000000000000
+      internalID: 4732073881897913812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
