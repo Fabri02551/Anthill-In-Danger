@@ -18,11 +18,14 @@ public class AntMovement : MonoBehaviour
     private float currentHealth; // Vida calculada según el nivel
     private float currentStrength; // Fuerza calculada según el nivel
 
+    private float health ;
+
     private Vector2 movementDirection; // Dirección actual de movimiento
     private Rigidbody2D rb; // Referencia al Rigidbody2D
 
     void Start()
     {
+        health = currentHealth;
         rb = GetComponent<Rigidbody2D>();
         UpdateAttributes(); // Inicializa los valores según los niveles actuales
 
@@ -35,6 +38,10 @@ public class AntMovement : MonoBehaviour
 
     void Update()
     {
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
         // Mueve la hormiga con la velocidad actual
         rb.velocity = movementDirection * currentSpeed;
 
@@ -89,8 +96,10 @@ public class AntMovement : MonoBehaviour
         if (healthLevel < maxLevel)
         {
             healthLevel++;
+            
             UpdateAttributes();
             Debug.Log($"Vida subió a nivel {healthLevel}. Nueva vida: {currentHealth}");
+            health =+ currentHealth;
         }
         else
         {
@@ -110,6 +119,11 @@ public class AntMovement : MonoBehaviour
         {
             Debug.Log("Fuerza ya está en el nivel máximo.");
         }
+    }
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        Debug.Log("Anthill Health: " + health);
     }
 
     // Métodos para obtener los atributos actuales

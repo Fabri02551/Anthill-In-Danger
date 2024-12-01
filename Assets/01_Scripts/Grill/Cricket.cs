@@ -11,20 +11,21 @@ public class Cricket : MonoBehaviour
     public float speed = 2f;
     public float detectionRangeMultiplier = 2f;
 
-    private Anthill anthill; // Referencia al hormiguero
-    private GameObject targetAnt; // Hormiga objetivo
+    private Anthill anthill;
+    private GameObject targetAnt;
     private float attackTimer = 0f;
     private CircleCollider2D detectionRange;
 
+    public delegate void DeathHandler(GameObject enemy);
+    public event DeathHandler OnDeath;
+
     void Start()
     {
-        // Encuentra el hormiguero en la escena
         anthill = FindObjectOfType<Anthill>();
-
-        // Configura el rango de detección
         detectionRange = gameObject.AddComponent<CircleCollider2D>();
         detectionRange.isTrigger = true;
         detectionRange.radius = GetComponent<Collider2D>().bounds.size.x * detectionRangeMultiplier;
+
     }
 
     void Update()
@@ -33,10 +34,8 @@ public class Cricket : MonoBehaviour
 
         if (targetAnt != null)
         {
-            // Si hay una hormiga objetivo, muévete hacia ella
             MoveTowards(targetAnt.transform.position);
 
-            // Si está cerca, ataca
             if (Vector2.Distance(transform.position, targetAnt.transform.position) < 0.5f)
             {
                 AttackAnt();
@@ -44,13 +43,13 @@ public class Cricket : MonoBehaviour
         }
         else if (anthill != null)
         {
-            // Si no hay hormiga, muévete hacia el hormiguero
             MoveTowards(anthill.transform.position);
 
-            // Si estás cerca del hormiguero, ataca
             if (Vector2.Distance(transform.position, anthill.transform.position) < 0.5f)
             {
                 AttackAnthill();
+                Debug.Log($"ataque ");
+
             }
         }
     }
@@ -74,17 +73,31 @@ public class Cricket : MonoBehaviour
     {
         if (attackTimer >= attackInterval)
         {
-            // Reducir la vida de la hormiga y destruirla
-            Destroy(targetAnt);
+            targetAnt.GetComponent<AntMovement>().TakeDamage(damageToAnt);
             attackTimer = 0f;
         }
     }
+
+    public void TakeDamage(int amount)
+    {
+        health -= amount;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        OnDeath?.Invoke(gameObject);
+        Destroy(gameObject);
+    }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Ant"))
         {
-            // Si detecta una hormiga, la convierte en objetivo
             targetAnt = collision.gameObject;
         }
     }
@@ -93,8 +106,15 @@ public class Cricket : MonoBehaviour
     {
         if (collision.CompareTag("Ant") && collision.gameObject == targetAnt)
         {
-            // Si la hormiga sale del rango, deja de ser objetivo
             targetAnt = null;
         }
+    }
+
+    public void IncreaseAttributes(int healthIncrement, int damageIncrement, float speedIncrement)
+    {
+        health += healthIncrement;
+        damageToAnthill += damageIncrement;
+        damageToAnt += damageIncrement;
+        speed += speedIncrement;
     }
 }
