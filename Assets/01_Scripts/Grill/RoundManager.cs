@@ -50,7 +50,6 @@ public class RoundManager : MonoBehaviour
         {
             Vector2 spawnPosition = GetRandomPointOnBorder();
             GameObject cricket = Instantiate(cricketPrefab, spawnPosition, Quaternion.identity);
-
             // Registrar evento de muerte para el grillo
             Cricket cricketScript = cricket.GetComponent<Cricket>();
             cricketScript.OnDeath += OnEnemyDeath;
