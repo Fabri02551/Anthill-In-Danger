@@ -19,8 +19,8 @@ public class Anthill : MonoBehaviour
 
     void Start()
     {
-        // Inicia el spawn repetitivo
-        InvokeRepeating("SpawnAnt", 0f, spawnInterval);
+        
+    
     }
 
     void Update()

@@ -1,10 +1,10 @@
 using UnityEngine;
-
+using UnityEngine.UI;
 public class ResourceManager : MonoBehaviour
 {
     public int coins = 0;
     public int sheets = 0;
-
+    public Text[] coinPriceTexts;
     private BaseUpgrade baseUpgrade;
 
     void Start()
@@ -15,7 +15,10 @@ public class ResourceManager : MonoBehaviour
             Debug.LogError("BaseUpgrade no encontrado en la escena.");
         }
     }
-
+    private void Update()
+    {
+        UpdateAllCoinPrices();
+    }
     public void AddCoins(int amount)
     {
         coins += amount;
@@ -59,5 +62,10 @@ public class ResourceManager : MonoBehaviour
         {
             Debug.Log("No hay suficientes hojas.");
         }
+    }
+    public void UpdateAllCoinPrices()
+    {
+        coinPriceTexts[0].text = coins.ToString();
+        coinPriceTexts[1].text = sheets.ToString();
     }
 }

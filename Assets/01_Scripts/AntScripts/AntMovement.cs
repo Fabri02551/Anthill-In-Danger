@@ -10,13 +10,13 @@ public class AntMovement : MonoBehaviour
     public float baseHealth = 10f; // Vida base
     public float baseStrength = 5f; // Fuerza base
 
-    private int speedLevel = 1; // Nivel actual de velocidad
-    private int healthLevel = 1; // Nivel actual de vida
-    private int strengthLevel = 1; // Nivel actual de fuerza
+    public int speedLevel = 1; // Nivel actual de velocidad
+    public int healthLevel = 1; // Nivel actual de vida
+    public int strengthLevel = 1; // Nivel actual de fuerza
 
-    private float currentSpeed; // Velocidad calculada según el nivel
-    private float currentHealth; // Vida calculada según el nivel
-    private float currentStrength; // Fuerza calculada según el nivel
+    public float currentSpeed; // Velocidad calculada según el nivel
+    public float currentHealth; // Vida calculada según el nivel
+    public float currentStrength; // Fuerza calculada según el nivel
 
     private Vector2 movementDirection; // Dirección actual de movimiento
     private Rigidbody2D rb; // Referencia al Rigidbody2D
