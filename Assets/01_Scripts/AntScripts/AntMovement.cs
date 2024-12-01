@@ -14,9 +14,9 @@ public class AntMovement : MonoBehaviour
     public int healthLevel = 1; // Nivel actual de vida
     public int strengthLevel = 1; // Nivel actual de fuerza
 
-    public float currentSpeed; // Velocidad calculada según el nivel
-    public float currentHealth; // Vida calculada según el nivel
-    public float currentStrength; // Fuerza calculada según el nivel
+    private float currentSpeed; // Velocidad calculada según el nivel
+    private float currentHealth; // Vida calculada según el nivel
+    private float currentStrength; // Fuerza calculada según el nivel
 
     private Vector2 movementDirection; // Dirección actual de movimiento
     private Rigidbody2D rb; // Referencia al Rigidbody2D
@@ -62,11 +62,11 @@ public class AntMovement : MonoBehaviour
     }
 
     // Actualiza los atributos basados en los niveles actuales
-    void UpdateAttributes()
+    public void UpdateAttributes()
     {
-        currentSpeed = baseSpeed + speedLevel * 0.5f; // Incrementa la velocidad en 0.5 por nivel
-        currentHealth = baseHealth + healthLevel * 2f; // Incrementa la vida en 2 por nivel
-        currentStrength = baseStrength + strengthLevel * 1f; // Incrementa la fuerza en 1 por nivel
+        currentSpeed = baseSpeed + (speedLevel - 1) * 0.5f; // Incrementa la velocidad en 0.5 por nivel
+        currentHealth = baseHealth + (healthLevel - 1) * 2f; // Incrementa la vida en 2 por nivel
+        currentStrength = baseStrength + (strengthLevel - 1) * 1f; // Incrementa la fuerza en 1 por nivel
     }
 
     // Métodos para subir de nivel cada atributo
@@ -111,4 +111,9 @@ public class AntMovement : MonoBehaviour
             Debug.Log("Fuerza ya está en el nivel máximo.");
         }
     }
+
+    // Métodos para obtener los atributos actuales
+    public float GetCurrentSpeed() => currentSpeed;
+    public float GetCurrentHealth() => currentHealth;
+    public float GetCurrentStrength() => currentStrength;
 }

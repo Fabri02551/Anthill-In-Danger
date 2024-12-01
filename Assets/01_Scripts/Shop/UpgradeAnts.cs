@@ -7,60 +7,70 @@ using UnityEngine.UI;
 public class UpgradeAnts : MonoBehaviour
 {
     private ResourceManager resourceManager;
+
     public Text[] coinPriceTexts;
     public int priceHealthCoin = 10, priceSpeedCoin = 10, priceStrengthCoin = 10;
+
+    // Niveles globales
+    public int globalSpeedLevel = 1;
+    public int globalHealthLevel = 1;
+    public int globalStrengthLevel = 1;
+
     private void Start()
     {
         resourceManager = FindObjectOfType<ResourceManager>();
         UpdateAllCoinPrices();
     }
+
     public void UpgradeAllAntsSpeed()
     {
-        // Encuentra todas las hormigas en escena que tengan el script AntMovement
-        AntMovement[] ants = FindObjectsOfType<AntMovement>();
         if (resourceManager.coins >= priceSpeedCoin)
         {
-            foreach (AntMovement ant in ants)
-            {
-                ant.LevelUpSpeed(); 
-            }
+            globalSpeedLevel++; // Incrementa el nivel global
+            UpdateAllAntsAttributes();
             resourceManager.RemoveCoins(priceSpeedCoin);
-            priceSpeedCoin = priceSpeedCoin + 5;
+            priceSpeedCoin += 5;
             UpdateAllCoinPrices();
         }
     }
 
     public void UpgradeAllAntsHealth()
     {
-        // Encuentra todas las hormigas en escena que tengan el script AntMovement
-        AntMovement[] ants = FindObjectsOfType<AntMovement>();
         if (resourceManager.coins >= priceHealthCoin)
         {
-            foreach (AntMovement ant in ants)
-            {
-            ant.LevelUpHealth(); // Sube el nivel de vida de cada hormiga
-            }
+            globalHealthLevel++; // Incrementa el nivel global
+            UpdateAllAntsAttributes();
             resourceManager.RemoveCoins(priceHealthCoin);
-            priceHealthCoin = priceHealthCoin + 5;
+            priceHealthCoin += 5;
             UpdateAllCoinPrices();
         }
     }
 
     public void UpgradeAllAntsStrength()
     {
-        // Encuentra todas las hormigas en escena que tengan el script AntMovement
-        AntMovement[] ants = FindObjectsOfType<AntMovement>();
         if (resourceManager.coins >= priceStrengthCoin)
         {
-            foreach (AntMovement ant in ants)
-            {
-            ant.LevelUpStrength(); // Sube el nivel de fuerza de cada hormiga
-            }
+            globalStrengthLevel++; // Incrementa el nivel global
+            UpdateAllAntsAttributes();
             resourceManager.RemoveCoins(priceStrengthCoin);
-            priceStrengthCoin = priceStrengthCoin + 5;
+            priceStrengthCoin += 5;
             UpdateAllCoinPrices();
+        }
     }
-}
+
+    // Actualiza todos los atributos de las hormigas existentes
+    private void UpdateAllAntsAttributes()
+    {
+        AntMovement[] ants = FindObjectsOfType<AntMovement>();
+        foreach (AntMovement ant in ants)
+        {
+            ant.speedLevel = globalSpeedLevel;
+            ant.healthLevel = globalHealthLevel;
+            ant.strengthLevel = globalStrengthLevel;
+            ant.UpdateAttributes(); // Aplica los cambios
+        }
+    }
+
     public void UpdateAllCoinPrices()
     {
         coinPriceTexts[0].text = priceHealthCoin.ToString();
@@ -68,3 +78,4 @@ public class UpgradeAnts : MonoBehaviour
         coinPriceTexts[2].text = priceSpeedCoin.ToString();
     }
 }
+

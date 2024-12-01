@@ -6,6 +6,8 @@ using UnityEngine;
 public class BuyAnts : MonoBehaviour
 {
     public GameObject antPrefab;
+    public GameObject antWarriorPrefrab;
+    public GameObject antQueenPrefrab;
     public Transform spawnPoint;
     public int antCost = 10;
 
@@ -31,7 +33,57 @@ public class BuyAnts : MonoBehaviour
             {
                 resourceManager.RemoveCoins(antCost);
                 baseUpgrade.AddAnt();
-                Instantiate(antPrefab, spawnPoint.position, Quaternion.identity);
+
+                GameObject newAnt = Instantiate(antPrefab, spawnPoint.position, Quaternion.identity);
+
+                // Ajustar los niveles de la nueva hormiga
+                AntMovement antMovement = newAnt.GetComponent<AntMovement>();
+                if (antMovement != null)
+                {
+                    // Sincroniza con los niveles globales
+                    UpgradeAnts upgradeAnts = FindObjectOfType<UpgradeAnts>();
+                    antMovement.speedLevel = upgradeAnts.globalSpeedLevel;
+                    antMovement.healthLevel = upgradeAnts.globalHealthLevel;
+                    antMovement.strengthLevel = upgradeAnts.globalStrengthLevel;
+                    antMovement.UpdateAttributes(); // Aplica los cambios
+                }
+
+                Debug.Log("Hormiga comprada.");
+            }
+            else if (!baseUpgrade.CanAddAnt())
+            {
+                Debug.Log("No hay capacidad para más hormigas.");
+            }
+            else
+            {
+                Debug.Log("No tienes suficientes monedas.");
+            }
+        }
+
+    }
+    public void BuyWarriorAnt()
+    {
+        if (resourceManager != null && baseUpgrade != null)
+        {
+            if (resourceManager.coins >= antCost && baseUpgrade.CanAddAnt())
+            {
+                resourceManager.RemoveCoins(antCost);
+                baseUpgrade.AddAnt();
+
+                GameObject newAnt = Instantiate(antPrefab, spawnPoint.position, Quaternion.identity);
+
+                // Ajustar los niveles de la nueva hormiga
+                AntMovement antMovement = newAnt.GetComponent<AntMovement>();
+                if (antMovement != null)
+                {
+                    // Sincroniza con los niveles globales
+                    UpgradeAnts upgradeAnts = FindObjectOfType<UpgradeAnts>();
+                    antMovement.speedLevel = upgradeAnts.globalSpeedLevel;
+                    antMovement.healthLevel = upgradeAnts.globalHealthLevel;
+                    antMovement.strengthLevel = upgradeAnts.globalStrengthLevel;
+                    antMovement.UpdateAttributes(); // Aplica los cambios
+                }
+
                 Debug.Log("Hormiga comprada.");
             }
             else if (!baseUpgrade.CanAddAnt())
@@ -44,4 +96,40 @@ public class BuyAnts : MonoBehaviour
             }
         }
     }
+    public void BuyQueenAnt()
+    {
+        if (resourceManager != null && baseUpgrade != null)
+        {
+            if (resourceManager.coins >= antCost && baseUpgrade.CanAddAnt())
+            {
+                resourceManager.RemoveCoins(antCost);
+                baseUpgrade.AddAnt();
+
+                GameObject newAnt = Instantiate(antPrefab, spawnPoint.position, Quaternion.identity);
+
+                // Ajustar los niveles de la nueva hormiga
+                AntMovement antMovement = newAnt.GetComponent<AntMovement>();
+                if (antMovement != null)
+                {
+                    // Sincroniza con los niveles globales
+                    UpgradeAnts upgradeAnts = FindObjectOfType<UpgradeAnts>();
+                    antMovement.speedLevel = upgradeAnts.globalSpeedLevel;
+                    antMovement.healthLevel = upgradeAnts.globalHealthLevel;
+                    antMovement.strengthLevel = upgradeAnts.globalStrengthLevel;
+                    antMovement.UpdateAttributes(); // Aplica los cambios
+                }
+
+                Debug.Log("Hormiga comprada.");
+            }
+            else if (!baseUpgrade.CanAddAnt())
+            {
+                Debug.Log("No hay capacidad para más hormigas.");
+            }
+            else
+            {
+                Debug.Log("No tienes suficientes monedas.");
+            }
+        }
+    }
+
 }
