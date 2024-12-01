@@ -5,14 +5,13 @@ using UnityEngine;
 public class Anthill : MonoBehaviour
 {
     // Vida del hormiguero
-    public int health = 500;
+    public int health = 1000;
 
     // Configuración del spawn
     public GameObject antPrefab; // Prefab de la hormiga
     public Transform[] spawnPoints; // Puntos donde aparecerán las hormigas
     public float spawnInterval = 3f; // Tiempo entre spawns
     public int maxAnts = 10; // Número máximo de hormigas activas
-
     private int currentAntCount = 0; // Número actual de hormigas activas
 
     void Start()
