@@ -1888,6 +1888,7 @@ GameObject:
   - component: {fileID: 207117734}
   - component: {fileID: 207117733}
   - component: {fileID: 207117738}
+  - component: {fileID: 207117739}
   m_Layer: 0
   m_Name: SceneCotroller
   m_TagString: Untagged
@@ -2048,6 +2049,15 @@ MonoBehaviour:
   bottomRight: {fileID: 2013101497}
   initialEnemyCount: 5
   timeBetweenRounds: 10
+--- !u!114 &207117739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207117730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e9bb22c09de0f147910a7dcccb26bca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
