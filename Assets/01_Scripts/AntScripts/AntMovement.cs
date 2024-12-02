@@ -18,16 +18,28 @@ public class AntMovement : MonoBehaviour
     private float currentHealth; // Vida calculada según el nivel
     private float currentStrength; // Fuerza calculada según el nivel
 
-    private float health ;
+    private float health;
 
     private Vector2 movementDirection; // Dirección actual de movimiento
     private Rigidbody2D rb; // Referencia al Rigidbody2D
+
+    // NUEVO: Referencias para transportar hojas
+    private bool carryingLeaf = false; // Indica si la hormiga está transportando una hoja
+    private GameObject targetLeaf; // La hoja que la hormiga transporta
+    private Anthill anthill; // Referencia al hormiguero
 
     void Start()
     {
         health = currentHealth;
         rb = GetComponent<Rigidbody2D>();
         UpdateAttributes(); // Inicializa los valores según los niveles actuales
+
+        // Buscar el hormiguero en la escena
+        anthill = FindObjectOfType<Anthill>();
+        if (anthill == null)
+        {
+            Debug.LogError("No se encontró ningún hormiguero en la escena.");
+        }
 
         // Cambia la dirección inicial al azar
         ChangeDirection();
@@ -52,6 +64,9 @@ public class AntMovement : MonoBehaviour
     // Cambia la dirección de movimiento aleatoriamente
     void ChangeDirection()
     {
+        // Si está cargando una hoja, no cambia de dirección
+        if (carryingLeaf) return;
+
         float randomX = Random.Range(-1f, 1f);
         float randomY = Random.Range(-1f, 1f);
 
@@ -76,7 +91,6 @@ public class AntMovement : MonoBehaviour
         currentStrength = baseStrength + (strengthLevel - 1) * 1f; // Incrementa la fuerza en 1 por nivel
     }
 
-    // Métodos para subir de nivel cada atributo
     public void LevelUpSpeed()
     {
         if (speedLevel < maxLevel)
@@ -96,10 +110,9 @@ public class AntMovement : MonoBehaviour
         if (healthLevel < maxLevel)
         {
             healthLevel++;
-            
             UpdateAttributes();
             Debug.Log($"Vida subió a nivel {healthLevel}. Nueva vida: {currentHealth}");
-            health =+ currentHealth;
+            health += currentHealth;
         }
         else
         {
@@ -120,14 +133,68 @@ public class AntMovement : MonoBehaviour
             Debug.Log("Fuerza ya está en el nivel máximo.");
         }
     }
+
     public void TakeDamage(int damage)
     {
         health -= damage;
-        Debug.Log("Anthill Health: " + health);
+        Debug.Log("Ant Health: " + health);
     }
-
-    // Métodos para obtener los atributos actuales
+    // Método para ajustar la velocidad si está transportando una hoja
+    void UpdateSpeedForCarrying()
+    {
+        if (carryingLeaf)
+        {
+            currentSpeed = baseSpeed * 0.5f; // Reduce la velocidad cuando transporta una hoja
+        }
+        else
+        {
+            currentSpeed = baseSpeed + (speedLevel - 1) * 0.5f; // Velocidad normal si no lleva hoja
+        }
+    }
     public float GetCurrentSpeed() => currentSpeed;
     public float GetCurrentHealth() => currentHealth;
     public float GetCurrentStrength() => currentStrength;
+
+    // NUEVO: Detectar colisiones con hojas y el hormiguero
+   
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!carryingLeaf && collision.CompareTag("Leaf"))
+        {
+            // Recoger la hoja
+            carryingLeaf = true;
+            targetLeaf = collision.gameObject;
+
+            // Cambiar dirección hacia el hormiguero
+            movementDirection = (anthill.transform.position - transform.position).normalized;
+
+            // Notificar la hoja que está siendo transportada
+            Sheet sheet = targetLeaf.GetComponent<Sheet>();
+            if (sheet != null)
+            {
+                sheet.UpdatePosition(anthill.transform.position); // Actualiza la posición de la hoja
+            }
+
+            UpdateSpeedForCarrying(); // Ajusta la velocidad
+            Debug.Log("Hoja recogida por la hormiga.");
+        }
+        else if (carryingLeaf && collision.CompareTag("Anthill"))
+        {
+            // Entregar la hoja al hormiguero
+            if (targetLeaf != null)
+            {
+                Sheet sheet = targetLeaf.GetComponent<Sheet>();
+                if (sheet != null)
+                {
+                    anthill.AddSheets((int)sheet.foodAmount);
+                    sheet.ClearAndDestroy(); // Elimina la hoja
+
+                }
+            }
+
+            carryingLeaf = false; // La hormiga ya no está cargando la hoja
+            targetLeaf = null; // Limpia la referencia
+            Debug.Log("Hoja entregada al hormiguero.");
+        }
+    }
 }
