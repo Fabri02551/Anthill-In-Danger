@@ -7,10 +7,11 @@ public class BuyAnts : MonoBehaviour
 {
     public GameObject antPrefab;
     public GameObject antWarriorPrefrab;
-    public GameObject antQueenPrefrab;
+    public int antQueen;
     public Transform spawnPoint;
     public int antCost = 10;
-
+    public int antQueenCost =210,antQueenCostLeaf =2200;
+    public float timeAnt =20f, timeResoruces=15.0f;
     private ResourceManager resourceManager;
     private BaseUpgrade baseUpgrade;
 
@@ -18,7 +19,7 @@ public class BuyAnts : MonoBehaviour
     {
         resourceManager = FindObjectOfType<ResourceManager>();
         baseUpgrade = FindObjectOfType<BaseUpgrade>();
-
+        antQueen = 1;
         if (resourceManager == null || baseUpgrade == null)
         {
             Debug.LogError("ResourceManager o BaseUpgrade no encontrado en la escena.");
@@ -100,30 +101,15 @@ public class BuyAnts : MonoBehaviour
     {
         if (resourceManager != null && baseUpgrade != null)
         {
-            if (resourceManager.coins >= antCost && baseUpgrade.CanAddAnt())
+            if (resourceManager.coins >= antQueenCost&& resourceManager.sheets >= antQueenCostLeaf && antQueen !=1)
             {
-                resourceManager.RemoveCoins(antCost);
-                baseUpgrade.AddAnt();
+                resourceManager.RemoveCoins(antQueenCost);
+                resourceManager.RemoveSheets(antQueenCostLeaf);
 
-                GameObject newAnt = Instantiate(antPrefab, spawnPoint.position, Quaternion.identity);
-
-                // Ajustar los niveles de la nueva hormiga
-                AntMovement antMovement = newAnt.GetComponent<AntMovement>();
-                if (antMovement != null)
-                {
-                    // Sincroniza con los niveles globales
-                    UpgradeAnts upgradeAnts = FindObjectOfType<UpgradeAnts>();
-                    antMovement.speedLevel = upgradeAnts.globalSpeedLevel;
-                    antMovement.healthLevel = upgradeAnts.globalHealthLevel;
-                    antMovement.strengthLevel = upgradeAnts.globalStrengthLevel;
-                    antMovement.UpdateAttributes(); // Aplica los cambios
-                }
-
-                Debug.Log("Hormiga comprada.");
-            }
-            else if (!baseUpgrade.CanAddAnt())
-            {
-                Debug.Log("No hay capacidad para más hormigas.");
+                antQueen = 1;
+                StartCoroutine(GenerateAntsOverTime());
+                StartCoroutine(GenerateResourcesOverTime());
+                Debug.Log("Hormiga Queen comprada.");
             }
             else
             {
@@ -131,5 +117,45 @@ public class BuyAnts : MonoBehaviour
             }
         }
     }
+    public void UpgradeTimeGenerateAnts() 
+    {
+        timeAnt--;
+    }
+    public void UpgradeTimeGenerateResources() 
+    {
+        timeResoruces--;
+    }
+    private IEnumerator GenerateAntsOverTime()
+    {
+        while (true) // Bucle infinito
+        {
+            yield return new WaitForSeconds(timeAnt);
+            baseUpgrade.AddAnt();
 
+            GameObject newAnt = Instantiate(antPrefab, spawnPoint.position, Quaternion.identity);
+
+            // Ajustar los niveles de la nueva hormiga
+            AntMovement antMovement = newAnt.GetComponent<AntMovement>();
+            if (antMovement != null)
+            {
+                // Sincroniza con los niveles globales
+                UpgradeAnts upgradeAnts = FindObjectOfType<UpgradeAnts>();
+                antMovement.speedLevel = upgradeAnts.globalSpeedLevel;
+                antMovement.healthLevel = upgradeAnts.globalHealthLevel;
+                antMovement.strengthLevel = upgradeAnts.globalStrengthLevel;
+                antMovement.UpdateAttributes(); // Aplica los cambios
+            }
+            Debug.Log("Generada una nueva hormiga.");
+        }
+    }
+
+    private IEnumerator GenerateResourcesOverTime()
+    {
+        while (true) // Bucle infinito
+        {
+            yield return new WaitForSeconds(timeResoruces);
+            resourceManager.AddCoins(1);
+            Debug.Log("Generados nuevos recursos.");
+        }
+    }
 }
