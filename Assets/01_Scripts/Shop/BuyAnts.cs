@@ -19,7 +19,7 @@ public class BuyAnts : MonoBehaviour
     {
         resourceManager = FindObjectOfType<ResourceManager>();
         baseUpgrade = FindObjectOfType<BaseUpgrade>();
-        antQueen = 1;
+        antQueen = 0;
         if (resourceManager == null || baseUpgrade == null)
         {
             Debug.LogError("ResourceManager o BaseUpgrade no encontrado en la escena.");
@@ -120,10 +120,14 @@ public class BuyAnts : MonoBehaviour
     public void UpgradeTimeGenerateAnts() 
     {
         timeAnt--;
+        resourceManager.RemoveCoins(20);
+        resourceManager.RemoveSheets(200);
     }
     public void UpgradeTimeGenerateResources() 
     {
         timeResoruces--;
+        resourceManager.RemoveCoins(10);
+        resourceManager.RemoveSheets(100);
     }
     private IEnumerator GenerateAntsOverTime()
     {

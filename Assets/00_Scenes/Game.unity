@@ -914,6 +914,7 @@ GameObject:
   - component: {fileID: 109324860}
   - component: {fileID: 109324862}
   - component: {fileID: 109324861}
+  - component: {fileID: 109324863}
   m_Layer: 5
   m_Name: AntTime
   m_TagString: Untagged
@@ -985,6 +986,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109324859}
   m_CullTransparentMesh: 1
+--- !u!114 &109324863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109324859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 109324861}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207117736}
+        m_TargetAssemblyTypeName: BuyAnts, Assembly-CSharp
+        m_MethodName: UpgradeTimeGenerateAnts
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &119430939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1084,7 +1141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &128900667
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1713,7 +1770,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 000
+  m_Text: 100
 --- !u!222 &199506187
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2012,9 +2069,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   antPrefab: {fileID: 8962331596173358356, guid: 7ed6348a80c10304694f578bcb814254, type: 3}
   antWarriorPrefrab: {fileID: 0}
-  antQueenPrefrab: {fileID: 0}
+  antQueen: 0
   spawnPoint: {fileID: 1957661082}
   antCost: 10
+  antQueenCost: 210
+  antQueenCostLeaf: 2200
+  timeAnt: 20
+  timeResoruces: 15
 --- !u!114 &207117737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2039,7 +2100,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207117730}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23b9402177a728a4a9231abaea812b13, type: 3}
   m_Name: 
@@ -2211,7 +2272,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 000
+  m_Text: 200
 --- !u!222 &219075956
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5533,8 +5594,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 74.195, y: 69.001}
-  m_SizeDelta: {x: -148.39, y: -37.5568}
+  m_AnchoredPosition: {x: 67.518, y: 69.001}
+  m_SizeDelta: {x: -135.0361, y: -37.5568}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &576407727
 MonoBehaviour:
@@ -5569,7 +5630,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 000
+  m_Text: 2200
 --- !u!222 &576407728
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6365,8 +6426,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -110, y: 69.826}
-  m_SizeDelta: {x: -167.3969, y: -35.9059}
+  m_AnchoredPosition: {x: -113.8154, y: 69.001}
+  m_SizeDelta: {x: -159.7661, y: -37.556}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &671886041
 MonoBehaviour:
@@ -6401,7 +6462,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 001
+  m_Text: 220
 --- !u!222 &671886042
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7240,6 +7301,7 @@ GameObject:
   - component: {fileID: 751433826}
   - component: {fileID: 751433828}
   - component: {fileID: 751433827}
+  - component: {fileID: 751433829}
   m_Layer: 5
   m_Name: CoinTime
   m_TagString: Untagged
@@ -7312,6 +7374,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 751433825}
   m_CullTransparentMesh: 1
+--- !u!114 &751433829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751433825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 751433827}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 207117736}
+        m_TargetAssemblyTypeName: BuyAnts, Assembly-CSharp
+        m_MethodName: UpgradeTimeGenerateResources
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &751511915
 GameObject:
   m_ObjectHideFlags: 0
@@ -8214,7 +8332,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 839865371}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 207117736}
+        m_TargetAssemblyTypeName: BuyAnts, Assembly-CSharp
+        m_MethodName: BuyQueenAnt
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &839865371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10373,7 +10503,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 001
+  m_Text: 10
 --- !u!222 &1032546877
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18851,7 +18981,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 001
+  m_Text: 20
 --- !u!222 &2039087016
 CanvasRenderer:
   m_ObjectHideFlags: 0
