@@ -2,65 +2,63 @@ using UnityEngine;
 
 public class Grill : MonoBehaviour
 {
-    public float health = 100f;  // Initial health of the grill
-    public float damage = 10f;   // Damage of the grill
-    public float size = 1f;      // Size of the grill
-    private GameObject mainTarget;  // The anthill (main target)
-    private GameObject secondaryTarget; // The target to attack when the grill takes damage
+    public float health = 100f;  // Vida inicial del Grill
+    public float damage = 10f;   // Daño del Grill
+    public float size = 1f;      // Tamaño del Grill
+    private GameObject mainTarget;  // El hormiguero (objetivo principal)
+    private GameObject secondaryTarget; // El objetivo secundario cuando el Grill recibe daño
 
-    private float moveSpeed = 2f; // Movement speed of the grill
+    private float moveSpeed = 2f; // Velocidad de movimiento del Grill
 
-    // Start is called before the first frame update
+    // Start es llamado antes de la primera actualización del frame
     private void Start()
     {
-        // Assign the anthill as the main target
+        // Asignamos el hormiguero como objetivo principal
         mainTarget = GameObject.FindGameObjectWithTag("Anthill");
     }
 
-    // This method is called to adjust grill's parameters based on the round
-    public void SetupGrill(int round)
+    // Este método ajusta los parámetros del Grill basados en el nivel de la hormiga atacante
+    public void SetupGrill(int antLevel)
     {
-        // Adjust the grill's properties based on the round
-        health += health * 0.02f * round;
-        damage += damage * 0.02f * round;
-        size += size * 0.02f * round;
+        // Ajusta las propiedades del Grill en función del nivel de la hormiga
+        health += health * 0.05f * antLevel;  // Aumenta la vida en función del nivel de la hormiga
+        damage += damage * 0.05f * antLevel;  // Aumenta el daño en función del nivel de la hormiga
+        size += size * 0.02f * antLevel;     // Aumenta el tamaño en función del nivel de la hormiga
 
-        // Adjust the visual size of the grill
+        // Ajusta el tamaño visual del Grill
         transform.localScale = new Vector3(size, size, size);
     }
 
     private void Update()
     {
-        // If there's a secondary target (the attacker), move towards it
+        // Si hay un objetivo secundario (la hormiga atacante), el Grill se mueve hacia él
         if (secondaryTarget != null)
         {
             transform.position = Vector3.MoveTowards(transform.position, secondaryTarget.transform.position, Time.deltaTime * moveSpeed);
         }
         else
         {
-            // If no secondary target, move towards the anthill
+            // Si no hay objetivo secundario, el Grill se mueve hacia el hormiguero
             transform.position = Vector3.MoveTowards(transform.position, mainTarget.transform.position, Time.deltaTime * moveSpeed);
         }
     }
 
-    // Method called when the grill takes damage
-    public void TakeDamage(float amount, GameObject attacker)
+    // Método llamado cuando el Grill recibe daño
+    // Método llamado cuando el Grill recibe daño
+    public void TakeDamage(float amount)
     {
-        health -= amount;
+        health -= amount; // Disminuye la salud
 
-        // Change the target to the one that dealt damage
-        if (health > 0)
+        // Si la vida del Grill llega a 0 o menos, destruye el objeto
+        if (health <= 0)
         {
-            secondaryTarget = attacker;
+            Destroy(gameObject); // Destruye el Grill
+            Debug.Log("Grill ha muerto.");
         }
         else
         {
-            // If the grill dies, destroy it
-            Destroy(gameObject);
+            Debug.Log("Grill recibió daño. Vida restante: " + health);
         }
     }
 
-    // Method to make the grill attack the anthill
-
 }
-
