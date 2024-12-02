@@ -6,6 +6,8 @@ TagManager:
   tags:
   - options
   - Ant
+  - Anthill
+  - Leaf
   layers:
   - Default
   - TransparentFX

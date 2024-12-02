@@ -2011,7 +2011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   antPrefab: {fileID: 8962331596173358356, guid: 7ed6348a80c10304694f578bcb814254, type: 3}
-  antWarriorPrefrab: {fileID: 0}
+  antWarriorPrefrab: {fileID: 5136871016920979905, guid: cec4bae8c89c5fd43bf6eea3db91e29b, type: 3}
   antQueenPrefrab: {fileID: 0}
   spawnPoint: {fileID: 1957661082}
   antCost: 10
@@ -2027,7 +2027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66a75266819c3804ab3594e8abec2295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coins: 10
+  coins: 100
   sheets: 1000
   coinPriceTexts:
   - {fileID: 780228039}
@@ -2039,7 +2039,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 207117730}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23b9402177a728a4a9231abaea812b13, type: 3}
   m_Name: 
@@ -5805,6 +5805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Anthill
       objectReference: {fileID: 0}
+    - target: {fileID: 2078584388293162894, guid: 7fc26820b5d4bc746b6a47cd96843c9b, type: 3}
+      propertyPath: m_TagString
+      value: Anthill
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -4370071180350764246, guid: 7fc26820b5d4bc746b6a47cd96843c9b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7fc26820b5d4bc746b6a47cd96843c9b, type: 3}
@@ -8622,7 +8626,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -8815,27 +8819,6 @@ PolygonCollider2D:
       - {x: 0.90999997, y: -4.7599998}
       - {x: 1.0799999, y: -4.71}
       - {x: 1.28, y: -4.64}
---- !u!50 &919421051
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919421047}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.0001
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 7
 --- !u!1001 &927639820
 PrefabInstance:
   m_ObjectHideFlags: 0

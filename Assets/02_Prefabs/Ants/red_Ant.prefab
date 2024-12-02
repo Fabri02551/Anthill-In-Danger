@@ -879,7 +879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxLevel: 10
   baseSpeed: 2
-  baseHealth: 10
+  baseHealth: 100
   baseStrength: 5
   speedLevel: 1
   healthLevel: 1
@@ -1014,7 +1014,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 8962331596173358356}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0

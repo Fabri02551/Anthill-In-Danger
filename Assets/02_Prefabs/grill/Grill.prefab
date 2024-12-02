@@ -1161,7 +1161,11 @@ GameObject:
   - component: {fileID: 7727154532320803908}
   - component: {fileID: -4977731834837894545}
   - component: {fileID: 7235184480532456156}
+<<<<<<< HEAD
   - component: {fileID: -3164774599859650100}
+=======
+  - component: {fileID: 201643612030886439}
+>>>>>>> LeafAnt
   m_Layer: 0
   m_Name: Grill
   m_TagString: Untagged
@@ -1365,15 +1369,21 @@ PolygonCollider2D:
       - {x: 0.09846193, y: -2.4948046}
       - {x: 0.50955564, y: -2.1008399}
       - {x: 0.6465869, y: -1.9124218}
+<<<<<<< HEAD
 --- !u!95 &-3164774599859650100
 Animator:
   serializedVersion: 5
+=======
+--- !u!58 &201643612030886439
+CircleCollider2D:
+>>>>>>> LeafAnt
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7440686821686374536}
   m_Enabled: 1
+<<<<<<< HEAD
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: d879ed47d7bcdcb448223ae1abd645cc, type: 2}
   m_CullingMode: 0
@@ -1386,6 +1396,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+=======
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 10
+>>>>>>> LeafAnt
 --- !u!1 &8531786765454382523
 GameObject:
   m_ObjectHideFlags: 0
